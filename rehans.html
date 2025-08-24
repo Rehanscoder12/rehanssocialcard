@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rehans Links</title>
+  <style>
+    :root{
+      --bg: #0f1724;
+      --card: rgba(255,255,255,0.05);
+      --border: rgba(255,255,255,0.15);
+      --accent: #06b6d4;
+      --muted: #94a3b8;
+      font-family: "Segoe UI", Roboto, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background: radial-gradient(circle at top, #1e293b, #0f1724);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      color:white;
+    }
+    .container{
+      width:100%;
+      max-width:420px;
+      padding:28px;
+      border-radius:20px;
+      backdrop-filter: blur(12px);
+      background: var(--card);
+      border:1px solid var(--border);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      text-align:center;
+      animation: fadeIn 0.8s ease;
+    }
+    @keyframes fadeIn{
+      from{opacity:0;transform: translateY(20px);}
+      to{opacity:1;transform: translateY(0);}
+    }
+    .avatar{
+      width:96px;height:96px;
+      border-radius:50%;
+      margin:0 auto 16px;
+      background:linear-gradient(135deg,var(--accent), #7c3aed);
+      display:flex;align-items:center;justify-content:center;
+      font-size:32px;font-weight:700;color:white;
+      box-shadow:0 4px 15px rgba(6,182,212,0.4);
+    }
+    h1{margin:0;font-size:22px;}
+    p.lead{margin:6px 0 20px;color:var(--muted);font-size:14px;}
+    .links{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .link{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:white;
+      padding:14px 16px;
+      border-radius:14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: all 0.25s ease;
+    }
+    .link:hover{
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      background: rgba(255,255,255,0.1);
+    }
+    .icon{
+      width:36px;height:36px;border-radius:10px;
+      background: rgba(255,255,255,0.08);
+      display:flex;align-items:center;justify-content:center;
+      font-size:18px;
+    }
+    .label{font-weight:600;font-size:15px;}
+    .muted{font-size:12px;color:var(--muted);}
+    footer{margin-top:20px;font-size:12px;color:var(--muted);}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="avatar">RK</div>
+    <h1>Rehans Kumar Pathak</h1>
+    <p class="lead">Connect with me on my platforms</p>
+
+    <div class="links">
+      <!-- GitHub -->
+      <a class="link" href="https://github.com/Rehanscoder12" target="_blank">
+        <div class="icon">🐙</div>
+        <div>
+          <div class="label">GitHub</div>
+          <div class="muted">My code & projects</div>
+        </div>
+      </a>
+      <!-- Instagram -->
+      <a class="link" href="https://www.instagram.com/pathakrehans?igsh=Y2M3NnFhaTg0ZW0z" target="_blank">
+        <div class="icon">📸</div>
+        <div>
+          <div class="label">Instagram</div>
+          <div class="muted">Photos & Reels</div>
+        </div>
+      </a>
+      <!-- YouTube -->
+      <a class="link" href="https://youtube.com/@pathakxplains?si=utx9JAQMR0lZxouc" target="_blank">
+        <div class="icon">▶️</div>
+        <div>
+          <div class="label">YouTube</div>
+          <div class="muted">Watch my videos</div>
+        </div>
+      </a>
+    </div>
+
+    <footer>© 2025 Rehans Kumar Pathak</footer>
+  </main>
+</body>
+</html>
